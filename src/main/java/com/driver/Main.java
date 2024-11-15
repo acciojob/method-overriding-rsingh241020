@@ -19,11 +19,10 @@ class B extends A {
 
 public class Main {
     public static void main(String[] args) {
-        // Task 3: Create object of class B and call method meth of class A with it
-        A b = new B();
+        // Task 3: Create object of class B and call method meth from class A with it
+        B b = new B();
 
         // Task 5: Call the overridden method from object of class B
-        System.out.println(b.meth());
+        System.out.println(b.meth());  // Should print "Method is overridden in Extended class B"
     }
 }
-
