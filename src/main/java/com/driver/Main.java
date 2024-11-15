@@ -9,7 +9,6 @@ class A {
 
 // Task 2: Create class B which extends class A
 class B extends A {
-
     // Task 4: Override method meth in class B
     @Override
     public String meth() {
@@ -19,10 +18,10 @@ class B extends A {
 
 public class Main {
     public static void main(String[] args) {
-        // Task 3: Create object of class B and call method meth from class A with it
-        B b = new B();
+        // Task 3: Create object of class B and call method meth of class A with it
+        A b = new B();
 
-        // Task 5: Call the overridden method from object of class B
-        System.out.println(b.meth());  // Should print "Method is overridden in Extended class B"
+        // Call the overridden method
+        System.out.println(b.meth()); // Task 5: Output should show overridden method from class B
     }
 }
